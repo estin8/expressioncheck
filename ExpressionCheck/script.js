@@ -36,16 +36,16 @@ video.addEventListener('play', () => {
     resizedDetections.forEach((detection) => {
       if (detection.expressions.angry >= 0.7) {
         console.log('calm down bro');
-        mood.textContent = 'calm down bro';
+        mood.textContent = 'Deep breath in...and out...';
       } else if (detection.expressions.happy >= 0.7) {
-        console.log('It looks like youre happy');
-        mood.textContent = 'It looks like youre happy';
+        console.log("That's the spirit. Keep smiling friend.");
+        mood.textContent = "That's the spirit. Keep smiling friend.";
       } else if (detection.expressions.neutral >= 0.7) {
         console.log('Just meh eh?');
         mood.textContent = 'Just meh eh?';
       } else if (detection.expressions.sad >= 0.7) {
         console.log("Awww what's wrong buh-babbyy?");
-        mood.textContent = 'Awww whats wrong buh-babbyy?';
+        mood.textContent = 'Feel better!';
       }
     });
   }, 1000);

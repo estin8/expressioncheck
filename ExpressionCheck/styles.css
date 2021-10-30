@@ -52,7 +52,6 @@ header h3 {
   position: absolute;
   margin: 10px auto;
   margin-top: 200px;
-  margin-left: 20px;
   border: 1px solid black;
   background-color: rgba(247, 26, 26, 0.397);
   border-radius: 10px;
@@ -180,7 +179,9 @@ header h3 {
 .response {
   width: 100%;
   margin: 0px auto;
-  margin-bottom: 35px;
+  position: absolute;
+  clear: both;
+  margin-bottom: 200px;
   text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.315);
   display: -webkit-box;
   display: -ms-flexbox;
